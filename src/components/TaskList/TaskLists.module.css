@@ -1,0 +1,9 @@
+.task-list{
+    background-color:#f4f4f4 ;
+    padding:3.2rem 0;
+    font-size: 1.4rem;
+}
+
+.task-list > div,.task-list > form{
+    padding:1.2rem  2.4rem;
+}

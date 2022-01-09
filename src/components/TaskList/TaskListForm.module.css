@@ -1,0 +1,9 @@
+.task-list-form{
+    display: flex;
+}
+.task-list-form:hover,.task-list-form:active{
+    background-color: #fff;
+}
+.task-list-form input::placeholder{
+    color:#4dabf7
+}

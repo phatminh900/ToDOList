@@ -1,0 +1,12 @@
+.task-day{
+    display: flex;
+    align-items: center;
+    gap:1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    /* background-color: #dcdcdc; */
+}
+.task-day:hover{
+    background-color:#dcdcdc;
+
+}

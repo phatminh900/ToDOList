@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+:root{
+  --color-primary:#4dabf7
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "M PLUS 1", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+.icon {
+  width: 2.4rem;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+.icon--delete {
+  color: chocolate;
+  transition: all 0.2s;
+}
+.icon--delete:hover {
+  transform: scale(1.1);
+}
+.active {
+  background-color: #dcdcdc;
+}
+
+/*  */
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+.hidden{
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}

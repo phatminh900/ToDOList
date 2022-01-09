@@ -1,0 +1,17 @@
+.task-item{
+    display: flex;
+    gap:1.2rem;
+    font-weight: 500;
+    list-style: none;
+    cursor: pointer;
+    padding:1.2rem  2.4rem;
+    justify-content: space-between;
+}
+.task-item.active{
+    background-color:#dcdcdc;
+}
+
+.task-item > div{
+    display: flex;
+    gap:1.2rem
+}

@@ -1,0 +1,33 @@
+.button{
+    /* transform: scale(1.5); */
+    position: relative;
+}
+.button:hover .notification{
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+.notification{
+    background-color:#fff;
+    border-radius: 5px;
+    box-shadow: 0 1.2rem 3.2rem rgba(0,0,0,0.2);
+    padding:1.2rem;
+    position: absolute;
+    font-size: 1.2rem !important;
+    white-space: nowrap;
+    transform: translate(-40%,-138%);
+    z-index: 9999;
+
+}
+.notification::after{
+    content:'';
+    width: 20px;
+    height: 15px;
+    background-color: #fff;
+    /* background-color: cyan; */
+    position: absolute;
+    bottom: -15px;
+    left:50%;
+    transform: translateX(-50%);
+    clip-path: polygon(0 0,100% 0,50% 100%);
+}

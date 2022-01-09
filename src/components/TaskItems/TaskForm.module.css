@@ -1,0 +1,17 @@
+.task-form {
+  margin-top: 2.4rem;
+  display: flex;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #999;
+}
+.task-form.active-form {
+  border-bottom: 1px solid #333;
+}
+.task-form svg {
+  color: #777;
+}
+.task-form button:last-child {
+  margin-left: auto;
+  color: #4dabf7;
+  font-weight: 600;
+}

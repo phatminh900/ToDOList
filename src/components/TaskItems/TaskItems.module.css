@@ -1,0 +1,49 @@
+.task-items {
+  padding: 1.2rem 3.2rem;
+  font-size: 1.6rem;
+}
+.task-items h2 {
+  font-weight: 500;
+}
+.date {
+  font-size: 1.2rem;
+  color: #777;
+}
+.tasks-item-completed {
+  margin-top: 1.2rem;
+}
+/* no item */
+.tasks-item-completed.hidden {
+  display: none;
+}
+.completed-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  cursor: pointer;
+}
+.completed-header.close + ul {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+/* open state */
+.completed-header.open + ul {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.completed-header > button {
+  transition: all 0.4s;
+}
+.completed-header.open > button {
+  transform: rotate(90deg);
+}
+
+/*  */
+.completed-header span {
+  font-weight: 600;
+}
+.completed-header p {
+  color: #777;
+}
