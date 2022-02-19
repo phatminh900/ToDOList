@@ -51,7 +51,7 @@ const taskListsSlice = createSlice({
       state.items.splice(findItemIndex, 1);
     },
     currentTaskList(state, action) {
-      // 
+      //
       if (!action.payload) {
         state.currentList = defaultTaskList[0];
         return;
@@ -59,8 +59,8 @@ const taskListsSlice = createSlice({
       const taskListItem = state.items.find(
         (taskList) => taskList.id === action.payload
       );
-      
-      state.currentList = { ...taskListItem };   
+
+      state.currentList = { ...taskListItem };
     },
     setCurrentTaskListState(state, action) {
       const taskListItem = state.items.find(

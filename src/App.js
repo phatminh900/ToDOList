@@ -20,6 +20,7 @@ function App() {
   //check if new day
 
     const time=getTime()
+    console.log(time);
     dispatch(tasksListActions.myDayTask(time))
   }, [dispatch]);
 
